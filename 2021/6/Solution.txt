@@ -1,0 +1,15 @@
+א:
+The return value of: sod1(a, 8, a.length -1) would be false.
+
+The aim of the program is to determine whether an element of the array has the values of x. 
+
+The time complexity of the program sod1 is O(n), as it iterates once over each element of the array. n == a.length.
+
+ב:
+The return value of: sod2(a, 16, a.length, - 1) would be true;
+
+The purpose of the program is to determine whether the sum of two elements of the given array a, would amount to the number x
+
+The time complexity of the program sod2 would be o(n^2), with n being the equivelent of the length of the array.
+
+The program iterates over the array once using sod1, and a section time using sod2.
