@@ -1,0 +1,6 @@
+The runtime complexity of the sort method is to be calculated in the following way:
+
+Firstly, all rings attached to the pole are removed and placed in either of two other poles in correspondence to their size; ("L" or "S").
+The above code block is ran at a runtime complexity of O(N) as it is dependent on the length of the input.
+Then secondly, all rings are removed from the pole destined to hold "L" sized rings and returned to the original pole. The aforementioned actions are once more ran at a runtime complexity of O(N) as they are dependent on the size of the input.
+Lastly, all rings are removed from the pole determined to hold "S" sized rings and returned back to the original pole. The aforementioned actions are once more ran at a runtime complexity of O(N) as they are dependent on the size of the input.
