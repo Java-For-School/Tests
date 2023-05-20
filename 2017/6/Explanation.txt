@@ -1,0 +1,3 @@
+The runtime complexity of the method implemented in the Main.java file is calculated in the following manner:
+
+For each element of the BinNode t1, it must scan each element of BinNode t2 hence creating an N^2 runtime complexity
