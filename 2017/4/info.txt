@@ -1,0 +1,23 @@
+insert(x) -> inserts element to the data-structure
+
+showMin() -> returns the lowest element of the data-structure
+
+getMax()  -> returns and removes the largest element of the data-structure
+
+exists(x) -> returns true if the element of value 'x' is in the data-structure
+
+div7()    -> returns true if an element of the data-structure is divisible by 7
+
+#1
+I would choose a Circular Doubly LinkedList of Integers.
+
+insert() would be executed such that the element is placed between two existing elements, the one to the right would be greater in value and the one to the left would be inferior.
+exists() would be executed such that it loops around the list until an element is already larger than the one sought after, or the first one has been reached
+showMin() would simply return the first element
+getMax() would detach the last element of the list from the list and connect its two relatives (the first one and the one before the last) then return the detached element
+
+#2 
+I would use a LinkedList
+insert() would be executed such that if the element is divisible by 7 it is placed between the first and second elements and otherwise it is placed between two existing elements, the one to the right would be greater in value and the one to the left would be inferior.
+
+getMax() would loop over the list and check whether the current element is greater than itself. Having found the largest element it would attach its neighbors to eachother and return the element.
