@@ -1,0 +1,6 @@
+The input of n = 15 would result in the printing of #2
+#1
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+#2
+1 2 3 0 5 0 7 0 0 0  11 0  13 0  0
+The code block would print all numbers divisible soley by themselves.
