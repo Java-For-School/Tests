@@ -1,5 +1,5 @@
 public class Main {
-  public static jumpNum(int num) {
+  public static boolean jumpNum(int num) {
     boolean last = (num % 10) % 2 == 0;
 
     while (num > 0) {
@@ -17,14 +17,14 @@ public class Main {
     for (int i = 0; i < arr.length; i++) {
       if (jumpNum(arr[i])) {
         newArr[index] = arr[i];
-        index++
+        index++;
       }
     }
 
     for (int i = 0; i < arr.length; i++) {
       if (!jumpNum(arr[i])) {
         newArr[index] = arr[i];
-        index++
+        index++;
       }
     }
 
