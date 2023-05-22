@@ -1,0 +1,67 @@
+#1
+
+a: | 2 | 4 | 7 | 12 | 18 |
+k: 11
+
+TABLE:
+
+ __________________________________________________
+|   i   |   j   | a[i]  |   a[j]  |   if(...)      |
+|   0   |   1   |   2   |   4     |     false      |
+|   1   |   2   |   4   |   7     |     true       |
+|__________________________________________________|
+
+RETURN: true
+
+#2 
+
+a: | 2 | 4 | 7 | 12 | 18 |
+k: 10
+
+
+ __________________________________________________
+|   i   |   j   | a[i]  |   a[j]  |   if(...)      |
+|   0   |   1   |   2   |   4     |     false      |
+|   1   |   2   |   4   |   7     |     true       |
+|   2   |   3   |   7   |   12    |     false      |
+|   3   |   4   |   12  |   18    |     false      |
+|__________________________________________________|
+
+RETURN: false
+
+#3
+
+Whether the array witholds two numbers such that their addition would amount to the number k;
+
+#4 
+
+The runtime-complexity of the sod method is derived from two loops, once of which is called from within the first. The loop's lengths are dependant on the size of the array 'a' and hence each has a runtime-complexity of n. Therefore the total runtime-complexity of the program is O(N^2)
+
+#5
+
+a: | 2 | 4 | 7 | 12 | 18 |
+k: 11
+
+ __________________________________________________________________________________________________
+| left  | right | a[left] | a[right] |  if (a[left] + a[right] == k) | if (a[left] + a[right] < k) |
+|   0   |   4   |   2     |   18     |            false              |           false             |
+|   0   |   3   |   2     |   12     |            false              |           false             |
+|   0   |   2   |   2     |   7      |            true               |           true              |
+|   1   |   2   |   4     |   7      |            true               |                             |
+|__________________________________________________________________________________________________|
+
+RETURN: true
+
+6#
+
+The runtime-complexity of the method 'what' is derived from one while loop. The aforementioned loop's duration of running is dependdant on the size of the input and hence it may be declared that the method runs at a runtime-complexity of O(N), with N having a relation to the size of the input.
+
+#7
+
+As we all know, the greater runtime-complexty is the one 'less' dependant on the input, or in other words the smaller one. The smaller runtime-complexity between O(N^2) and O(N) is O(N).
+
+#8
+
+  - a: Not at all, the function 'sod' does not revolve around the array being sorted, but rather simply looks for a pair of elements that amount to a certain sum.
+
+  - b: Yes indeed, the function 'what' works under the assumption that the array provided to it is sorted, should the array not be sorted the indexes of the elements would have no correlation to the size of the sum of the two measured elements and hence moving between different elements of the array would be senseless.  
