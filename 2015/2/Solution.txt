@@ -1,0 +1,66 @@
+#2 A
+
+a:
+| 5 | 7 | 8 | 12 |
+
+TABLE:
+______________________
+| i |       a        |
+| 0 | 5 | 7 | 8 | 12 |
+| 1 | 5 | 7 | 8 | 12 |
+| 2 | 5 | 7 | 8 | 12 |
+----------------------
+
+#2 B 
+
+The runtime-complexity of the program provided that the array is of size n and is already sorted is n. Should the program receive a sorted array it would simply iterate over it once and hence the runtime-complexity is as described above.
+
+#2 C 
+
+| 12 | 8 | 7 | 5 |
+______________________
+| i |       a        |
+| 0 | 8 | 12 | 7 | 5 |
+| 0 | 8 | 12 | 7 | 5 |
+| 1 | 8 | 7 | 12 | 5 |
+| 0 | 7 | 8 | 12 | 5 |
+| 0 | 7 | 8 | 12 | 5 |
+| 1 | 7 | 8 | 12 | 5 |
+| 2 | 7 | 8 | 5 | 12 |
+| 0 | 7 | 8 | 5 | 12 |
+| 1 | 7 | 5 | 8 | 12 |
+| 0 | 5 | 7 | 8 | 12 |
+----------------------
+
+#2 D 
+
+The runtime-complexity of the program provided that the array is of size n and is sorted descendingly, would be O(N^2). The previous is derived from the fact that for each irritation, the index i would be reset.
+And so it may be calculated in the following manner:
+
+2 + 3 + 4 + 5 + 6... + (n + 2)
+
+This sum may more thoroughly be represented the following way: 
+
+    (n + 2)*(n + 4)
+S = ----------------
+           2
+
+
+S = n^2 + 6n + 8
+   --------------
+         2
+
+S = ~n^2 and hence the runtime-complexity is as stated above.
+
+
+Correct solution:
+#2 D 
+
+The runtime-complexity is O(N^3)
+
+For each of the n unsorted elements,
+A sort which is of the runtime-complexity of N^2 is performed
+
+f(N) = N * N^2 => N^3
+
+The sorting of an element in position k leads to the sorting of all elements prior to it again. Such actions have a runtime-complexity of O(N^3)
