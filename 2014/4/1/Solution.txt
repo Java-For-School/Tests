@@ -1,0 +1,13 @@
+#1
+
+The return value would be 3
+
+#2
+
+The method returns the number of negative elements that are in the list
+
+#3
+
+1) The method would return the number of elements appearing the list prior to the first non-negative one
+
+2) The list would point to the first non-negative element of the list 
