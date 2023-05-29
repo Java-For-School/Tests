@@ -1,0 +1,16 @@
+#1
+
+The files: Table1.xls; Table2.xls; Table3.xls, are corresponding to each of the methods: sod1; sod2; and sod3.
+
+#2
+
+sod1: The runtime-complexity of the function sod1 may be calculated as follows:
+The function includes one singular loop which is repeated precisely 4 times regardless of the size of the input, earning it a runtime-complexity of O(1).
+
+sod2: The runtime-complexity of the function sod2 may be calculated as follows:
+The function includes one singular loop which is dependant on the input's size, earning it a runtime-complexity of O(N), with N being the size of the input.
+
+sod3: 
+The runtime-complexity of the function sod3 may be calculated as follows:
+The function includes two loops, one of which is nested in the other.
+Both loops are dependant on the input's size, earning sod3 the runtime-complexity of O(N*M) = O(N^2).
