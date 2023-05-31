@@ -1,0 +1,11 @@
+#2 
+
+An appropriate call would be: karamba(1, b, 0, 2);
+
+#3 
+
+The function returns the sum of all elements of the array that are between e and s, and are greater than k
+
+#4
+
+The function is called N times, with N being dependant on the size of the input, and runs at a runtime-complexity of O(1), which earns it the total runtime-complexity of O(N). 
