@@ -1,0 +1,3 @@
+class RealSet {
+  double[] numbers;
+}
